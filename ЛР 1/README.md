@@ -25,7 +25,7 @@ Root = 5; height = 6, left_leaf = root^2, right_leaf = root-2
 **Результат основной программы:**
 
 Модуль bintreerec.py
-![code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-answer.png)
+![code1]()
 
 **Комментарий к тестам:** Сложности не возникло
 
