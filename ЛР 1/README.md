@@ -25,16 +25,31 @@ Root = 5; height = 6, left_leaf = root^2, right_leaf = root-2
 **Результат основной программы:**
 
 Модуль bintreerec.py
-![code1]()
+
+![code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-rec.png)
+
+Модуль bintreenerec.py
+
+![code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-nerec.png)
 
 **Комментарий к тестам:** Сложности не возникло
 
 **Результат тестовой программы:**
 
-Unittest
+Unittest для рекурсии
 
 ![test_code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-unittest.png)
 
-Pytest
+Unittest для нерекурсии
 
-![test_code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-pytest.png)
+![test_code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-pytestnerec.png)
+
+
+Pytest для рекурсии
+
+![test_code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-unrec.png)
+
+
+Pytest для нерекурсии
+
+![test_code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-unnerec.png)
