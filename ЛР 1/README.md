@@ -26,11 +26,11 @@ Root = 5; height = 6, left_leaf = root^2, right_leaf = root-2
 
 Модуль bintreerec.py
 
-![code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-rec.png)
+![code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1rec.png)
 
 Модуль bintreenerec.py
 
-![code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1-nerec.png)
+![code1](https://github.com/MelnikNO/programming-2c-2sem/blob/main/Screen/lr1nerec.png)
 
 **Комментарий к тестам:** Сложности не возникло
 
