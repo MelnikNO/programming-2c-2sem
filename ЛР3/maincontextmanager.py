@@ -9,16 +9,6 @@ from contextlib import contextmanager
 # параметризованный декоратор
 # def trace(func):
 def trace(func=None, *, handle=sys.stdout):
-    """
-    Логирование происходит в:
-    - стандартный вывод (sys.stdout)
-    - файл в формате JSON
-    - базу данных SQLite
-
-    :param func: Функция, которую необходимо обернуть декоратором. Если не указана, возвращает функцию-декоратор.
-    :param handle: Место для логирования. Может быть стандартным выводом, именем файла для записи в формате JSON или соединением с SQLite.
-    :return: Обернутую функцию с логированием.
-    """
 
     if func is None:
         return lambda func: trace(func, handle=handle)
