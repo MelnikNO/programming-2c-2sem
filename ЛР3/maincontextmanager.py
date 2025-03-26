@@ -119,28 +119,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-# from contextlib import contextmanager
-#
-# with dbc() as c:
-#     print(c)
-#     @contextmanager
-#     def dbc():
-#         handle_for_f4 = sqlite3.connect(":memory:")
-#         try:
-#             print('connection to db')
-#             yield handle_for_f4
-#         finally:
-#             print('handle is closing')
-#             handle_for_f4
-#
-#     with dbc() as c:
-#         print(c)
-#         @trace(handle=c)
-#         def f4(x):
-#             return x ** 4
-#
-#         print(f4(10))
-#
-#     print(f'145 line')
-#     input('enter')
-
