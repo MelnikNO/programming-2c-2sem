@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Rates</title>
+</head>
+<body>
+    <h1>Currency Rates</h1>
+    {% if error_message %}
+        <p style="color:red;">{{ error_message }}</p>
+    {% endif %}
+    <table>
+        <thead>
+            <tr>
+                <th>Currency ID</th>
+                <th>Value</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for currency_id, value in rates.items() %}
+                <tr>
+                    <td>{{ currency_id }}</td>
+                    <td>{{ value }}</td>
+                    <td><a href="{{ url_for('delete', currency_id=currency_id) }}">Delete</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <a href="{{ url_for('create') }}">Create New Currency</a>
+    <br>
+    <a href="{{ url_for('update') }}">Update Currency</a>
+</body>
+</html>
