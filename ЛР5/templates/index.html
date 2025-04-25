@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Курсы Валют</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+<body>
+    <h1 class="text-center">Курсы Валют</h1>
+    {% if error_message %}
+        <p style="color:red;">{{ error_message }}</p>
+    {% endif %}
+
+    <form method="post" action="{{ url_for('set_currencies') }}">
+        <label for="currencies" class="form-label">Валюты (через запятую):</label>
+        <input type="text" id="currencies" class="form-control mb-3" name="currencies" value="{{ ', '.join(currency_rates.currencies) }}">
+        <button type="submit" class="btn btn-primary">Установить валюты</button>
+    </form>
+
+    <table class="table table-striped table-bordered table-hover mt-5">
+        <thead>
+            <tr>
+                <th class="text-center">ID Валюты</th>
+                <th class="text-center">Значение</th>
+                <th class="text-center">Последнее обновление</th>
+                <th class="text-center">Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for currency_id, data in rates.items() %}
+                <tr>
+                    <td class="text-center">{{ currency_id }}</td>
+                    <td class="text-center">{{ data.value }}</td>
+                    <td class="text-center">{{ data.datetime }}</td>
+                     <td class="text-center">
+                        <a href="{{ url_for('update', currency_id=currency_id) }}" class="btn btn-primary mr-2" style="width: 90px;">Update</a>
+                        <form action="{{ url_for('delete', currency_id=currency_id) }}" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-primary" style="width: 90px;">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

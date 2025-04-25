@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Обновление</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+<body>
+    <h1 class="text-center mb-5">Обновить курс валют</h1>
+    {% if error_message %}
+        <p style="color:red;">{{ error_message }}</p>
+    {% endif %}
+    {% if success_message %}
+        <p style="color:green;">{{ success_message }}</p>
+    {% endif %}
+    <form method="post" class="text-center">
+        <p>ID Валюты: {{ currency_id }}</p>
+        <button type="submit" class="btn btn-primary mb-3" style="width: 90px;">Update</button>
+    </form>
+    <a href="{{ url_for('index') }}" class="btn btn-primary" style="width: 90px;">Назад</a>
+    <script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
