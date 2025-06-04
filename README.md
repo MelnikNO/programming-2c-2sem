@@ -10,4 +10,6 @@
 
 ## Лабораторная работа № 5 - 	[ЛР5](https://github.com/MelnikNO/programming-2c-2sem/tree/main/ЛР5#readme)
 
+## Лабораторная работа № 6 - 	[ЛР6](https://github.com/MelnikNO/programming-2c-2sem/tree/main/ЛР6#readme)
+
 ## Лабораторная работа № 7 - 	[ЛР7](https://github.com/MelnikNO/programming-2c-2sem/tree/main/ЛР7#readme)
