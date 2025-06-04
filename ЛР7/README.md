@@ -25,10 +25,11 @@ README.md файла борда replit;
 
 ![image_2025-06-04_10-48-45](https://github.com/user-attachments/assets/7e9f6b64-a02f-4ef4-950a-36f7542e89da)
 
+[Ссылка на файл index.rst](https://github.com/MelnikNO/programming-2c-2sem/blob/main/ЛР7/source/index.rst)
 
 ---
 
-Сайт
+html
 
 ![image_2025-06-04_12-06-28](https://github.com/user-attachments/assets/26c4a049-f05e-4d50-8207-bb2e2ca5c1ff)
 
