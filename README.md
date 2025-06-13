@@ -14,4 +14,4 @@
 
 ## Лабораторная работа № 7 - 	[ЛР7](https://github.com/MelnikNO/programming-2c-2sem/tree/main/ЛР7#readme)
 
-## Лабораторная работа № 7 - 	[ЛР7](https://github.com/MelnikNO/programming-2c-2sem/tree/main/ЛР8#readme)
+## Лабораторная работа № 8 - 	[ЛР8](https://github.com/MelnikNO/programming-2c-2sem/tree/main/ЛР8#readme)
